@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactandFeedback</title>
+    <link rel="stylesheet" href="ContactandFeedback.css">
+</head>
+<body>
+    <header>
+        <div class = "navigation">
+            <img src = "../../contactandfeedback/logo/K2MOUNTAIN.png" alt = "K2 Mountain Logo" width = "100">
+            <ul>
+                <li><a href = "HomePage.html">HomePage</a></li>
+                <li><a href = "AboutK2.html">AboutK2</a></li>
+                <li><a href = "TravelGuide.html">TravelGuide</a></li>
+                <li><a href = "Gallery.html">Gallery</a></li>
+                <li><a href = "ContactandFeedback.html" > Contact and Feedback </a></li>
+            </ul>
+        </div>
+    </header>
+    <h1 class="H1heading">Contact Us</h1>
+    <div class="forms">
+        <div class="contactform">
+            <div class="contactform">
+                <h2 class="H2heading"> Contact Form</h2>
+            </div>
+            <form>
+                <label class="info" for = "firstname">Name:*</label> 
+                <br>
+                <input type="text" placeholder="First Name" id="firstname" name="firstname" required>
+                <label class="info" for="lastname">Last Name:</label>
+                <br>
+                <input type="text" placeholder="Last Name (Optional)" id="lastname" name="lastname">
+                <br>
+                <fieldset>
+                    <legend class="info">Gender:*</legend>
+                <br>
+                <input type="radio" value="male" name="gender" id="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" value="female" name="gender" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" value="prefer-not-to-ask" name="gender" id="prefer-not-to-ask">
+                <label for="prefer-not-to-ask">Prefer not to ask</label>
+                <br>
+                </fieldset>
+                <label class="info" for="email">E-mail:*</label> 
+                <br>
+                <input type="email" placeholder="Type your E-mail address" id="email" name="email" required>
+                <br>
+                <label  class="info" for="phone">Phone number: (optional)</label> 
+                <br>
+                <input type="tel" name="phone" placeholder="Enter your mobile number" id="phone">
+                <br>
+                <fieldset>
+                    <legend class="info">Reason for contacting:*</legend>
+                <br>
+                <input type="radio" value="feedback" name="reason" id="feedback" required>
+                <label for="feedback"> Feedback </label>
+
+                <input type="radio" value="booking" name="reason" id="booking">
+                <label for="booking"> Booking </label>
+
+                <input type="radio" value="inquiry" name="reason" id="inquiry">
+                <label for="inquiry"> Inquiry </label>
+
+                <input type="radio" value="complain" name="reason" id="complain">
+                <label for="complain"> Complain </label>
+
+                <input type="radio" value="recommend us what we improve?" name="reason" id="recommend_us_what_we_improve">
+                <label for="recommend_us_what_we_improve"> Recommend us what we improve? </label>
+                <br>
+                </fieldset>
+                <label class="info"  for="message">Message:*</label>
+                <br>
+                <textarea id="message" name="message" placeholder="Write your message." rows="5" cols="40" required></textarea>
+                <br> 
+                <fieldset>
+                    <legend class="info" >Select Your Treeking Experience Level*:</legend>
+                <br>
+                <input type="radio" value="mountaineer" name="trekking-experience" id="mountaineer" required>
+                <label for="mountaineer"> Mountaineer</label>
+                
+                <input type="radio" value="non-mountaineer" name="trekking-experience" id="non-mountaineer">
+                <label for="non-mountaineer"> Non-Mountaineer </label>
+                <br>
+                </fieldset>
+                <p class="info">Terms and Conditions:*</p>
+                <br>
+                <input type="checkbox" value="termsandconditions" name="conditions" id="termsandconditions">
+                <label for="termsandconditions"> I am agree with terms and conditions. </label>
+                <br>
+                <button type="submit"> Submit</button>
+            </form>
+        </div>
+        <div class="contactinfo">
+            <h2 class="H2heading">Contact information</h2>
+            <p><b>E-mail:</b>ABC@gmail.com</p>
+            <p><b>Phone:</b>+92 123 456 789</p>
+            <p><b>Adress:</b>Karimadab Travel, Karimabad, Hunza valley,Gilgit-Baltistan, Pakistan</p>
+        </div>
+        <p class="copyright">&copy; 2025 K2 Mountain Tours. All rights reserved.</p>
+    </div>
+    <footer>
+        <p class="copyright">&copy; 2025 K2 Mountain Tours. All rights reserved.</p>
+    </footer>
+</body>
+</html>

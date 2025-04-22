@@ -1,0 +1,550 @@
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: row; 
+        justify-content: space-around; 
+        background-color: rgba(0, 0, 0, 0.6);
+        position: static; 
+        width: 100%; 
+        display: flex; 
+        flex-wrap: wrap; 
+        padding: 10px ;
+    }
+    .navigation ul li {
+        text-align: center;
+        margin: 5px 0;
+    }
+    .navigation ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .SImage,
+    .PImage,
+    .CImage,
+    .C2Image,
+    .TDImages,
+    .F1,
+    .F2,
+    .F3,
+    .F4{
+        display: none;
+    }
+    h4{
+        display: NONE;
+    }
+    .Introduction{
+        margin: 10px;
+    }
+    .H4{
+        display: none;
+    }
+    }
+*{
+    font-family: "Segoe UI", 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+h4 {
+    font-size: 15px;
+    color: lightcoral;
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 20px;
+}
+h1, h2 {
+    text-shadow:  0 0 25px rgba(255,0 , 0, 0.6);
+    transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover {
+    text-shadow: 0 0 20px rgba(0, 0, 255, 0.6), 0 0 30px rgba(255, 0, 0, 0.9);
+}
+.Lines{
+    font-size: 18px;  
+    text-align: center; 
+    display: block;   
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Lines b{
+    color: gold;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+    background-color: Black;
+}
+.navigation{
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.navigation UL{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navigation li{
+    list-style-type: none;
+    margin:0 ;
+    display: flex;
+}
+.navigation a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.navigation a:after {
+    content: "";
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0; 
+    height: 4px;
+    background-color: red ;
+    transition: width 0.3s ease;
+}
+.navigation a:hover{
+    color: gold;
+    transform: scale(1.1);
+}
+.navigation a:hover:after {
+    width: 100%; 
+}
+.navigation {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px); 
+    color: white;
+}
+.mainImage{
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    display: block;
+    position: relative;
+    object-fit: cover;
+}
+.mainHeading {
+    font-family: 'Arial' , 'roboto';
+    font-size: 60px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    margin-bottom: 10px; 
+    color: red;
+}
+.H2heading{
+    font-size: 30px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    color: #00bfff;
+}
+.mainline {
+    font-size: 15px; 
+    border: 2px solid gold; 
+    margin: 10px auto;
+    line-height: 1.4; 
+    width: 70%;
+    text-align: center; 
+    display: block;  
+    max-width: 800px;
+    border-radius: 8%; 
+    border-color: lightgrey;
+}
+.mainline b{
+    color: gold;
+    transition: all 0.3s ease;
+}
+.mainline:hover{
+    transform: scale(1.02);
+}
+.H3headings{
+    font-size: 25px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    color: #E3D0FF
+}
+.H3Condition{
+    font-size: 25px; 
+    text-align: left; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    color: #E3D0FF;
+}
+.dedliest{
+    background-color: #1a1a1a;
+    padding: 0;
+}
+.dedliest b{
+    color: #ffc107;
+}
+.Box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 100px;
+}
+.zone{
+    background-color: #333333;
+    border: 2px solid gray;
+    border-radius: 12%;
+    height: 200px;
+    width: 600px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+.zone:hover{
+    background-color: #444444;
+    transform: scale(1.03);
+}
+.zone:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+}
+.zone:nth-child(2){
+    grid-column: 2;
+    grid-row: 2;
+    border-left: red;
+}
+.zone:nth-child(3){
+    grid-column: 1;
+    grid-row: 3;
+}
+.zone:nth-child(4){
+    grid-column: 2;
+    grid-row: 4;
+}
+.zone:nth-child(odd){
+    border-left: 6px solid red;
+}
+.zone:nth-child(even){
+    border-right: 6px solid red;
+}
+@media (max-width: 768px) {
+.Box {
+    margin-left: 0 ; 
+    padding: 10px; 
+}   
+.zone {
+    width: 100%;
+    height: auto ; 
+    border-radius: 12px; 
+}
+.zone:nth-child(odd),
+.zone:nth-child(even) {
+    border-left: 6px solid red !important;
+    border-right: 6px solid red !important;
+}
+}
+.H3safety{
+    font-size: 25px; 
+    text-align: left; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    color: #E3D0FF;
+}
+.K2Basecamp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.SImage {
+    height: 500px;
+    width: 40%;
+    background-image: url("../AboutK2/safety.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+.SImage:hover{
+    transform: scale(1.10);
+}
+.safety {
+    width: 50%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: left;
+}
+
+.safety h2 {
+    color: slategray;
+    font-size: 30px;
+}
+
+.safety b {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.safety ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.safety li {
+    margin-bottom: 5px;
+    list-style-type: square;
+}
+.tips{
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+.tips b{
+    color: gold;
+}
+.imagescontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.F1 {
+    height: 200px;
+    width: 20%;
+    background-image: url("../../AboutK2/FirstClimbers/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+.F2{
+    height: 200px;
+    width: 20%;
+    background-image: url("../../AboutK2/FirstClimbers/3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.F3{
+    height: 200px;
+    width: 20%;
+    background-image: url("../../AboutK2/FirstClimbers/4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.F4 {
+    height: 200px;
+    width: 20%;
+    background-image: url("../../AboutK2/FirstClimbers/5.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+.PImage {
+    height: 200px;
+    width: 20%;
+    background-image: url("../../AboutK2/Survivors/peter.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+}
+.PImage:hover{
+    transform: scale(1.10);
+}
+.caption{
+    margin: 20px;
+}
+.carlosSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+  }
+  .carlosSection {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1500px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.carlos{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.CImage {
+    height: 400px;
+    width: 30%;
+    background-image: url("../../AboutK2/Survivors/Carlos1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+.C2Image {
+    height: 400px;
+    width: 30%;
+    background-image: url(" ../../AboutK2/Survivors/Carlos2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+}
+.content{
+    width: 50%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2%;
+}
+.content h2{
+    color: slategray;
+    font-size: 30px;
+}
+.content b {
+    color: #ffcc00; 
+    font-weight: bold; 
+}
+.TDImages {
+    height: 380px;
+    width: 40%;
+    background-image: url("../../AboutK2/2008%20disaster/D2008.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8%;
+    border: 2px solid silver;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out;
+    margin-left: 30%;
+}
+.points{
+    font-size: 18px;
+}
+.points b{
+    color: gold;
+}
+.Link{
+    font-size: 25px;
+    text-decoration: none;
+    color: red;
+    border:2px solid white;
+}
+.ContactUs{
+    display: inline-block;
+    background-color: #333;
+    border-radius: 10%;
+    padding: 10px 15px;
+    margin: 10px;
+    top: 50%;
+    position: fixed;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ContactUs a{
+    text-decoration: none;
+    color: white;
+}
+.ContactUs:hover{
+    transform: scale(1.1);
+}
+.travelguide a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border-radius: 8px;
+    display: inline-block;
+    animation: bounce 3s ease 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-5px);
+    }
+}
+.contactinfo {
+    background-color: #262626;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.copyright{
+    text-align: center;
+    color: #999999;
+}
